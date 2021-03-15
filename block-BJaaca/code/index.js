@@ -43,16 +43,16 @@ character.isAdult = function () {
 };
 // - Add a new method (function inside objects are called methods) named `changeIsAdult`. When called should be able to flip the value of `isAdult` from true to false and false to true.
 character.changeIsAdult = function () {
-  return !character.isAdult();
+  character.isAdult = !character.isAdult();
 };
+
 // - Add a new key with the name stored in variable `keyName` defined below i.e `playedBy` (use [] for computed property) and the value of "Maisie Williams"
 
 let keyName = "playedBy";
-
-// keyName.playedBy = "Maisie Williams";
+character["keyName"] = "Maisie Williams";
 
 // - Using `alert` alert the value stored in key you added above `keyName` use the variable name to access
-alert(keyname.playedBy);
+alert(character["keyName"]);
 // - Using the function `console.log` log the value of the key `42`. You don't have to add the key
 console.log(character["42"]);
 // - Add a new key named `totalSeasons` with the value of `1 + 2 + 3 + 2`. Use this expression
