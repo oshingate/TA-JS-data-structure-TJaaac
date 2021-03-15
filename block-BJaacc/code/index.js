@@ -29,3 +29,5 @@ console.log(Object.keys(students).length);
 delete students.isAdult;
 console.log(students);
 // 13. Update the value of the key batch in the object `students` and print it using `console.log`
+students.batch = 15;
+console.log(students.batch);
